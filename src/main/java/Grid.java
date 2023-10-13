@@ -9,18 +9,18 @@ import static java.lang.Integer.parseInt;
 public class Grid {
     private int height;
     private int width;
-    //private char[][] grid;
+    private char[][] grid;
     private ArrayList<String> words;
 
 
     //      Getters & Setters
     public int getHeight(){return this.height;}
     public int getWidth() {return width;}
-   // public char[][] getGrid() {return grid;}
+    public char[][] getGrid() {return grid;}
     public ArrayList<String> getWords() {return words;}
     public void setHeight(int height){this.height = height;}
     public void setWidth(int width){this.width = width;}
-    //public void setGrid(char[][] grid) {this.grid = grid;}
+    public void setGrid(char[][] grid) {this.grid = grid;}
     public void setWords(ArrayList<String> words) {this.words = words;}
 
     // File reader
@@ -42,12 +42,14 @@ public class Grid {
         setHeight(parseInt(numbers[0]));
         setWidth(parseInt(numbers[1]));
        // ArrayList<Character> grid = new ArrayList<>();
-         String[][] grid = new String[getHeight()][getWidth()];
+         char[][] lettersGrid = new char[getHeight()][getWidth()];
+        setGrid(lettersGrid);
 
         // Letters
         for (int i = 0; i < this.getHeight(); i++) {
             line = reader.nextLine();
-            String[] letters = line.split(" ");
+            String[] lettersList = line.split(" ");
+            char[] letters = String.join("", lettersList).toCharArray();
             grid[i] = letters;
 
             }
@@ -57,12 +59,15 @@ public class Grid {
 
         // Words
         line = reader.nextLine();
-        String[] words = line.split(" ");
+        String[] wordsList = line.split(" ");
+        ArrayList<String> wordsArray = new ArrayList<>();
 
-        for (int i = 0; i < words.length; i++) {
-            System.out.println(words[i]);
+        for (int i = 0; i < wordsList.length; i++) {
+            wordsArray.add(i, wordsList[i]);
+
         }
-        // Put in a ArrayList or keep in a table?
+        this.setWords(wordsArray);
+        System.out.println(words);
 
     }
 
