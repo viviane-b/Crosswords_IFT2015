@@ -1,7 +1,7 @@
 import java.util.*;
 public class PatternSearch {
-    private int[] x = {-1, -1, -1, 0, 0, 1, 1, 1 };
-    private int[] y = {-1, 0, 1, -1, 1, -1, 0, 1 };
+    private int[] x = {0,-1, -1, -1, 0, 0, 1, 1, 1 };
+    private int[] y = {0,-1, 0, 1, -1, 1, -1, 0, 1 };
     private char[][] grid;
     private char[][] words;
     //private ArrayList<String> path = new ArrayList<>();
@@ -139,12 +139,12 @@ public class PatternSearch {
         int pathLength = length-word.length;
         path.adjustPath(pathLength);
         if (this.grid[x0][y0] == word[0]) {
-            System.out.println("letter " + word[0] + " was found at position (" + x0 + "," + y0 + ").");
+//            System.out.println("letter " + word[0] + " was found at position (" + x0 + "," + y0 + ").");
             path.enqueue("(" + x0 + "," + y0 + ")");
             if (word.length == 1) {;
                 path.printPath();
             } else {
-                for (int move = 0; move<8; move++) {
+                for (int move = 0; move<9; move++) {
                     int row = x0 + x[move];
                     int col = y0 + y[move];
                     if (row >= 0 && row < this.grid.length && col >= 0 && col < this.grid[0].length) {
@@ -170,14 +170,14 @@ public class PatternSearch {
             for (int m = 0; m < grid.length; m++) {
                 for (int n = 0; n < grid[m].length; n++) {
                     if (grid[m][n] == first) {  // we have the position of the first letter of the word.
-                        System.out.println("letter " + first + " is at position (" + m + "," + n + ").");
+        //                System.out.println("letter " + first + " is at position (" + m + "," + n + ").");
                         findWord(m, n, words[i], path, words[i].length);
         //                if (isAround(m, n, words[i], path)) {
         //                    System.out.println("SUCCESS! The word " + new String(words[i]) + " was found at position \n");
         //                    System.out.println(this.path);
         //                    printPath(new String(words[i]), this.path);
         //                   this.path.clear();
-                            System.out.println("\n");
+        //                    System.out.println("\n");
 
         //                } else {
         //                    System.out.println("the word " + new String(words[i]) + " was not found at position (" + + m + "," + n + "). \n");

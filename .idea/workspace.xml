@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cee43823-d1df-4b73-830b-11fee25af141" name="Changes" comment="search functions">
+    <list default="true" id="cee43823-d1df-4b73-830b-11fee25af141" name="Changes" comment="print words paths">
+      <change afterPath="$PROJECT_DIR$/src/main/java/FileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PatternSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PatternSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697594705323</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="print words paths">
+      <created>1697826742319</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697826742319</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,7 +121,8 @@
     <MESSAGE value="Grid class" />
     <MESSAGE value="PatternSearch" />
     <MESSAGE value="search functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="search functions" />
+    <MESSAGE value="print words paths" />
+    <option name="LAST_COMMIT_MESSAGE" value="print words paths" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

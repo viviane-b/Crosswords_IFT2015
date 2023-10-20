@@ -11,6 +11,12 @@ public class Grid {
     private int width;
     private char[][] grid;
     private ArrayList<String> words;
+    public Grid(int height, int width, char[][] grid, ArrayList<String> words) {
+        this.height = height;
+        this.width = width;
+        this.grid = grid;
+        this.words = words;
+    }
 
 
     //      Getters & Setters
@@ -54,7 +60,6 @@ public class Grid {
 
             }
 
-        System.out.println(grid[0][2]);
 
 
         // Words
@@ -67,7 +72,7 @@ public class Grid {
 
         }
         this.setWords(wordsArray);
-        System.out.println(words);
+//        System.out.println(words);
 
     }
 
