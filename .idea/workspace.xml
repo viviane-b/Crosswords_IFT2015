@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cee43823-d1df-4b73-830b-11fee25af141" name="Changes" comment="print words paths">
-      <change afterPath="$PROJECT_DIR$/src/main/java/FileReader.java" afterDir="false" />
+    <list default="true" id="cee43823-d1df-4b73-830b-11fee25af141" name="Changes" comment="functionnal code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Grid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Path.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PatternSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PatternSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Words.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Words.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +53,16 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Crosswords_path" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="IFT2015_TP1" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;C:\\_Code\\courses\\IFT2015_TP1\\src\\main\\resources\\TP1Input2&quot;" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -102,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697826742319</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="functionnal code">
+      <created>1697831053469</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697831053469</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,7 +141,8 @@
     <MESSAGE value="PatternSearch" />
     <MESSAGE value="search functions" />
     <MESSAGE value="print words paths" />
-    <option name="LAST_COMMIT_MESSAGE" value="print words paths" />
+    <MESSAGE value="functionnal code" />
+    <option name="LAST_COMMIT_MESSAGE" value="functionnal code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
