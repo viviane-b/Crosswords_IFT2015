@@ -6,6 +6,11 @@ public class PatternSearch {
     private char[][] words;
 
 
+    /**
+     * Constructor for PatternSearch
+     * @param grid the grid of letters
+     * @param words the words to find in the grid
+     */
     public PatternSearch(char[][] grid, char[][] words) {
         this.grid = grid;
         this.words = words;
@@ -27,7 +32,7 @@ public class PatternSearch {
 
         if (this.grid[x0][y0] == word[0]) {
             // Add the coordinates to the path
-            path.enqueue("(" + x0 + "," + y0 + ")");
+            path.push("(" + x0 + "," + y0 + ")");
 
             // If it's the last character of the word, the whole word was found. The path is printed
             if (word.length == 1) {;

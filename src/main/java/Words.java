@@ -4,11 +4,15 @@ import java.util.Comparator;
 public class Words {
     private ArrayList<String> words;
 
+    /**
+     * Constructor for Words
+     * @param words the list of words to find
+     */
     public Words( ArrayList<String> words) {this.words = words;}
 
     //      Getters & Setters
     public ArrayList<String> getWords() {return words;}
-    public void setWords(ArrayList<String> words) {this.words = words;}
+
 
 
     /**

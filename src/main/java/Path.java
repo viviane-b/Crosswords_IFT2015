@@ -1,28 +1,26 @@
-import java.util.LinkedList;
+import java.util.Stack;
 
 
 public class Path  {
     private String word;    // the word found
 
-    // the path of the word, each coordinate of the format "(x,y)"
-    private LinkedList<String> list = new LinkedList<>();
+    private Stack<String> list = new Stack<>();      // the path of the word, each coordinate of the format "(x,y)"
 
+    /**
+     * Constructor for Path
+     * @param word the word to print the path of
+     */
     public Path (String word) {
         this.word = word;
     }
 
-    //      Getters & Setters
-    public String getWord() {return word;}
-    public LinkedList<String> getList() {return list;}
-    public void setList(LinkedList<String> list) {this.list = list;}
-    public void setWord(String word) {this.word = word;}
 
     /**
      * Adds new coordinates at the end of the path
      * @param element the coordinates to add
      */
-    public void enqueue(String element) {
-        this.list.addLast(element);
+    public void push(String element) {
+        this.list.push(element);
     }
 
 
@@ -33,7 +31,7 @@ public class Path  {
      */
     public void adjustPath(int index) {
         for (int i = index; i<this.list.size(); i++) {
-            this.list.removeLast();
+            this.list.pop();
         }
     }
 
@@ -45,6 +43,6 @@ public class Path  {
         for (int i=0; i< this.list.size()-1; i++) {
             System.out.print(this.list.get(i) + "->");
         }
-        System.out.println(this.list.get(this.list.size()-1));
+        System.out.println(this.list.peek());
     }
 }
