@@ -1,13 +1,8 @@
 import java.io.FileNotFoundException;
-import java.time.Clock;
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-
-        // TODO: remove
-        Clock clock = Clock.systemDefaultZone();
-
 
 
         ArrayList<Grid> grids = new ArrayList<>();
@@ -19,12 +14,6 @@ public class Main {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
-
-
-
-        long before = clock.millis();
-
 
 
 
@@ -43,11 +32,6 @@ public class Main {
             wordSearch.search();
 
         }
-
-
-
-        long after = clock.millis();
-        System.out.println(after-before);
 
     }
 }
